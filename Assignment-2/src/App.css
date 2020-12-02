@@ -1,0 +1,56 @@
+body {
+  background: linear-gradient(purple 0%, orange 30%, yellow 45%, orange 70%, purple 90%);;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  height: 40vh;
+  width: 20vw;
+  text-align: center;
+  
+  font-size: 2.5em;
+  border: 5px solid black;
+  border-radius: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  border: 10px solid black;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 45px;
+}
+
+.btn_container button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 1em;
+  height: 200%;
+  width: 30%  ;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: grab;
+}
+
+.btn_container button:hover {
+  color: brown; 
+  background-color: transparent;
+  border: 5px solid brown;
+  font-size: 0.5em;
+}
+
+.btn_container button:active {
+  cursor: grabbing;
+}
